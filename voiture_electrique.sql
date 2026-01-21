@@ -2,10 +2,10 @@
 -- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
--- Host: mysql1
--- Generation Time: Jan 18, 2026 at 10:09 AM
--- Server version: 9.5.0
--- PHP Version: 8.3.26
+-- Hôte : mysql1
+-- Généré le : lun. 19 jan. 2026 à 14:15
+-- Version du serveur : 9.5.0
+-- Version de PHP : 8.3.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tpvoiture`
+-- Base de données : `1BDD`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `voiture_electrique`
+-- Structure de la table `voiture_electrique`
 --
 
 CREATE TABLE `voiture_electrique` (
@@ -35,38 +35,40 @@ CREATE TABLE `voiture_electrique` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `voiture_electrique`
+-- Déchargement des données de la table `voiture_electrique`
 --
 
 INSERT INTO `voiture_electrique` (`id`, `marque`, `modele`, `vente`) VALUES
+(1, 'renault', '5 E-Tech', 37997),
 (2, 'Peugeot', 'e-2008', 8231),
-(3, 'Tesla', 'Model Y', 19207),
-(4, 'Voldkswagen', 'ID 3', 8415),
-(5, 'Citroën', 'ë-C3', 16223),
-(6, 'Renault', 'Mégane E-Tech', 8752),
-(7, 'Renault', 'Scénic E-Tech', 16128),
-(9, 'BMW', 'iX1', 8897),
+(3, 'BMW', 'iX1', 8897),
+(4, 'Citroen', 'e-C3', 16223),
+(5, 'Tesla', 'Model 3', 6128),
+(6, 'Dacia', 'Spring', 7428),
+(7, 'Mini COOPER', 'E/SE', 11563),
+(8, 'Audi ', 'Q- e-tron', 4342),
+(9, 'BMW', 'iX2', 3924),
 (10, 'Skoda', 'Enyaq', 4392);
 
 --
--- Indexes for dumped tables
+-- Index pour les tables déchargées
 --
 
 --
--- Indexes for table `voiture_electrique`
+-- Index pour la table `voiture_electrique`
 --
 ALTER TABLE `voiture_electrique`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT for table `voiture_electrique`
+-- AUTO_INCREMENT pour la table `voiture_electrique`
 --
 ALTER TABLE `voiture_electrique`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
